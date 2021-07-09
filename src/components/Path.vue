@@ -2,14 +2,14 @@
  <div class="navigation">
    <div class="path">
      <ul>
-       <li><a href="#" class="path-link">홈</a></li>
+       <li><a href="" class="path-link">홈</a></li>
        <li>
          <span>></span>
-         <a href="#" class="path-link">카카오톡 지갑</a>
+         <a href="" class="path-link">카카오톡 지갑</a>
        </li>
        <li>
          <span>></span>
-         <a href="#" class="path-link">일반</a>
+         <a href="" class="path-link" v-for="(path, i) in pathNameList" :key="i">{{path}}</a>
        </li>
      </ul>
    </div>
@@ -18,12 +18,17 @@
 <script>
 export default {
   name: 'Path',
+  data() {
+    return {
+      pathNameList: ['일반'],
+    };
+  },
 };
 </script>
 <style>
 
 .navigation{
-  border-bottom:1px solid black;
+  border-bottom:1px solid #e8e8e8;
 }
 .path{
   width:990px;

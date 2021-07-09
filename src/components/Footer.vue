@@ -23,7 +23,7 @@ export default {
 
 <style>
 footer{
-  border-top:1px solid black;
+  border-top:1px solid #e8e8e8;
 }
 
 footer>div{

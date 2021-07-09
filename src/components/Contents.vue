@@ -1,11 +1,11 @@
 <template>
    <div class="category-content">
       <div class="category-name">일반</div>
-      <div class="common"><a href="#" class="os">os 공통</a></div>
+      <div class="common"><a href="" class="os">os 공통</a></div>
       <div class="question-list">
         <div class="question-item" v-for="(question, number) in questionList" :key="number">
           <div class="question-number">{{number+1}}</div>
-          <a href="#" class="question-string">
+          <a href="" class="question-string">
             <div class="question">{{question}}</div>
             <div class="detail-button"><i class="fas fa-chevron-down"></i></div>
           </a>
@@ -34,8 +34,7 @@ export default {
 <style>
 .category-content{
   width:809px;
-  border-left:1px solid black;
-  /* margin:15px 0px 60px 58px; */
+  border-left:1px solid #e8e8e8;
 }
 
 .category-content>div{
@@ -50,7 +49,7 @@ export default {
 
 .common{
   padding:10px 0px 10px 5px;
-  border-top:1px solid black;
+  border-top:2px solid black;
 }
 
 .os{
@@ -62,7 +61,7 @@ export default {
 
 .question-list{
   padding:20px 0px;
-  border-top:1px solid black;
+  border-top:2px solid black;
   border-bottom:1px solid black;
 }
 
@@ -72,7 +71,7 @@ export default {
 }
 
 .question-item:not(:last-child){
-    border-bottom:1px solid black;
+    border-bottom:1px solid #e8e8e8;
 }
 .question-number{
   font-size:14px;
@@ -92,8 +91,7 @@ export default {
 }
 
 .detail-button{
-  margin-left:auto;
-  margin-right:15px;
+  margin:0px 15px 0px auto;
 }
 
 .fa-chevron-down{
@@ -102,7 +100,7 @@ export default {
 
 .inquiry{
   display:flex;
-  margin-top:80px;
+  margin-top:40px;
   padding-bottom:100px;
 }
 
@@ -112,9 +110,10 @@ export default {
 }
 
 .inquiry-button{
+  border:none;
   margin-left:auto;
   width:186px;
-  height:46px;
+  height:42px;
 }
 
 .fa-pencil-alt{

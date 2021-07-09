@@ -1,6 +1,6 @@
 <template>
     <div class="search-box">
-       <input type="text" value="궁금한 점이 있다면 도움말을 검색해 보세요." class="input">
+       <input type="text" placeholder="궁금한 점이 있다면 도움말을 검색해 보세요." class="input">
        <button class="submit-button"><i class="fas fa-search"></i></button>
     </div>
 </template>
@@ -12,14 +12,14 @@ export default {
 <style>
 .search-box{
   border:1px solid black;
-  width:480px;
+  width:460px;
   height:46px;
   margin-left:30px;
 }
 
 .input{
   border:none;
-  width:429px;
+  width:400px;
   height:44px;
   margin-left:10px;
 }
@@ -29,7 +29,7 @@ export default {
   background-color: #fff;
 }
 
-.submit-button>i{
+.fa-search{
   font-size:18px;
 }
 </style>

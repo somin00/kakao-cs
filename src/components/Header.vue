@@ -2,7 +2,7 @@
  <header>
    <div class="setting">
      <button class="lang-button">한국어</button>
-     <a href="#" class="login-link">로그인</a>
+     <a href="" class="login-link">로그인</a>
    </div>
    <div class="head">
      <img src="../assets/cslogo.gif" alt="kakao 고객센터" class="cslogo">
@@ -27,7 +27,7 @@ export default {
 header{
   display:flex;
   flex-direction: column;
-  border-bottom:1px solid black;
+  border-bottom:1px solid #e8e8e8;
 }
 
 .setting{
@@ -56,8 +56,8 @@ header{
 }
 
 .cslogo{
-  width:208px;
-  height:38px;
+  width:200px;
+  height:35px;
   margin-top:5px;
 }
 
