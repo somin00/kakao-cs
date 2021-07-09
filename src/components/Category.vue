@@ -1,7 +1,9 @@
 <template>
-    <div class="category-list">
-      <div v-for="(categoryName, i) in categoryNameList" :key="i">{{categoryName}}</div>
-    </div>
+    <ul class="category-list">
+      <li class="category-item" v-for="(categoryName, i) in categoryNameList" :key="i">
+        <a>{{categoryName}}</a>
+      </li>
+    </ul>
 </template>
 <script>
 export default {
@@ -14,12 +16,14 @@ export default {
 };
 </script>
 <style>
-.category-list>div{
-  margin:0px 0px 20px 3px;
-  font-size:15px;
+.category-list{
+  list-style:none;
+  padding:0px;
+  width:160px;
 }
 
-.category-list{
-  margin-top:40px;
+.category-item{
+  margin-bottom:20px;
+  font-size:14px;
 }
 </style>

@@ -44,17 +44,16 @@ export default {
 .category-name{
   font-size:30px;
   font-weight: bold;
-  margin: 20px 0px 30px;
+  margin: 40px 0px;
 }
 
 .common{
-  padding:10px 0px 10px 5px;
+  padding:15px 0px 15px 5px;
   border-top:2px solid black;
 }
 
 .os{
   color:black;
-  font-weight: bold;
   font-size:16px;
   margin:0px 7px;
 }

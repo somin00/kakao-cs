@@ -36,8 +36,9 @@ main>.main{
 }
 
 h2{
+  width:160px;
   font-size:20px;
-  margin-top:40px;
+  margin:40px 0px;
 }
 
 </style>

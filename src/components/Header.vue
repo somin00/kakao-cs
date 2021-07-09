@@ -2,6 +2,7 @@
  <header>
    <div class="setting">
      <button class="lang-button">한국어</button>
+     <img src="https://www.mommyestimate.com/img/arrow_down_black.png" alt="언어보기" class="more-lang">
      <a href="" class="login-link">로그인</a>
    </div>
    <div class="head">
@@ -41,6 +42,12 @@ header{
   border:none;
   background-color: #fff;
   font-size: 12px;
+}
+
+.more-lang{
+  width:7px;
+  height:7px;
+  margin:6px 5px 0px 0px;
 }
 
 .login-link{

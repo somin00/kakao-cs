@@ -9,7 +9,7 @@
        </li>
        <li>
          <span>></span>
-         <a href="" class="path-link" v-for="(path, i) in pathNameList" :key="i">{{path}}</a>
+         <a href="" class="path-link" v-for="path in pathNameList" :key="path">{{path}}</a>
        </li>
      </ul>
    </div>
