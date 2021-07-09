@@ -9,7 +9,7 @@
        </li>
        <li>
          <span>></span>
-         <a href="" class="path-link" v-for="path in pathNameList" :key="path">{{path}}</a>
+         <a href="" class="path-link">{{pathName}}</a>
        </li>
      </ul>
    </div>
@@ -20,7 +20,7 @@ export default {
   name: 'Path',
   data() {
     return {
-      pathNameList: ['일반'],
+      pathName: '일반',
     };
   },
 };

@@ -27,11 +27,10 @@ export default {
   font-size:14px;
 }
 
-.category-item:first-child{
-  text-decoration:underline;
+.category-item:active{
+  text-decoration: underline;
   font-weight:bold;
 }
-
 .category-item:hover{
   text-decoration: underline;
   font-weight:bold;
