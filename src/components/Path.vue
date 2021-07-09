@@ -46,4 +46,16 @@ export default {
   text-decoration: none;
   color:black;
 }
+
+.path-link:not(:first-child){
+  margin-left:10px;
+}
+
+.path-link:hover{
+  text-decoration:underline;
+}
+
+ul>li{
+  margin-right:10px;
+}
 </style>

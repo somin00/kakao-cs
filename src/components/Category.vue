@@ -26,4 +26,14 @@ export default {
   margin-bottom:20px;
   font-size:14px;
 }
+
+.category-item:first-child{
+  text-decoration:underline;
+  font-weight:bold;
+}
+
+.category-item:hover{
+  text-decoration: underline;
+  font-weight:bold;
+}
 </style>

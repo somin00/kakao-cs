@@ -34,7 +34,7 @@ header{
 .setting{
   width:990px;
   display:flex;
-  margin:0px auto 20px;
+  margin:10px auto 20px;
   justify-content: flex-end;
 }
 
