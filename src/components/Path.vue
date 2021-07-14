@@ -2,14 +2,14 @@
  <div class="navigation">
    <div class="path">
      <ul>
-       <li><a href="" class="path-link">홈</a></li>
+       <li><a href="" class="path-link">{{home}}</a></li>
        <li>
          <span>></span>
-         <a href="" class="path-link">카카오톡 지갑</a>
+         <a href="" class="path-link">{{serviceName}}</a>
        </li>
        <li>
          <span>></span>
-         <a href="" class="path-link">{{pathName}}</a>
+         <a href="" class="path-link">{{selectedCategoryName}}</a>
        </li>
      </ul>
    </div>
@@ -18,11 +18,7 @@
 <script>
 export default {
   name: 'Path',
-  data() {
-    return {
-      pathName: '일반',
-    };
-  },
+  props: ['home', 'serviceName', 'selectedCategoryName'],
 };
 </script>
 <style>

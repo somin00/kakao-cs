@@ -1,14 +1,10 @@
 <template>
    <div class="category-content">
-      <div class="category-name">일반</div>
+      <div class="category-name">{{selectedCategoryName}}</div>
       <div class="common"><a href="" class="os">os 공통</a></div>
       <div class="question-list">
-        <div class="question-item" v-for="(question, number) in questionList" :key="number">
-          <div class="question-number">{{number+1}}</div>
-          <a href="" class="question-string">
-            <div class="question">{{question}}</div>
-            <div class="detail-button"><i class="fas fa-chevron-down"></i></div>
-          </a>
+        <div class="question-item" v-for="(question, number) in selectedQuestionList" :key="number">
+          <Question :number="number + 1" :question="question"/>
         </div>
       </div>
       <div class="inquiry">
@@ -22,12 +18,13 @@
     </div>
 </template>
 <script>
+import Question from './Question.vue';
+
 export default {
   name: 'Contents',
-  data() {
-    return {
-      questionList: ['카카오 지갑은 어떤 서비스인가요?', '카카오 인증서는 무엇인가요?', '나의 디지털 ID가 무엇인가요?'],
-    };
+  props: ['selectedCategoryName', 'selectedQuestionList'],
+  components: {
+    Question,
   },
 };
 </script>
@@ -83,11 +80,11 @@ export default {
   color:black;
 }
 
-.question{
+/* .question{
   font-size:14px;
   width:625px;
   margin-right:30px;
-}
+} */
 
 .detail-button{
   margin:0px 15px 0px auto;
